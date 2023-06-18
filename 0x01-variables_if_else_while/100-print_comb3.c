@@ -9,10 +9,10 @@ int main(void)
 {
 	putchar('0');
 	putchar(',');
-	putchar('0');
-	putchar('1');
+	putchar(' ');
+	putchar('0' + 1 / 10);
+	putchar('0' + 1 % 10);
 	putchar('\n');
 
 	return (0);
 }
-
