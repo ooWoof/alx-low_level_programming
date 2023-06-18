@@ -6,16 +6,19 @@
  * this program prints "Programming is positive, zero, or negative
  * Return: 0
  */
+#include <stdio.h>
 int main(void)
 {
-
-	int c;
-
-	for (c = 0; c <= 9; c++)
-
-		putchar((c & 10) + '0');
-
+	putchar('0');
+	putchar('1');
+	putchar('2');
+	putchar('3');
+	putchar('4');
+	putchar('5');
+	putchar('6');
+	putchar('7');
+	putchar('8');
+	putchar('9');
 	putchar('\n');
-
 	return (0);
 }
