@@ -10,15 +10,14 @@ int factorial(int n)
 {
     if (n < 0)
     {
-        return -1; // Return -1 to indicate an error for negative numbers
+        return -1;
     }
-    else if (n == 0)
     {
-        return 1; // Base case: Factorial of 0 is 1
+        return 1;
     }
     else
     {
-        return n * factorial(n - 1); // Recursive case: Multiply n by factorial of (n-1)
+        return n * factorial(n - 1);
     }
 }
 

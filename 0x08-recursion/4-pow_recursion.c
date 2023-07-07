@@ -11,14 +11,14 @@ int _pow_recursion(int x, int y)
 {
         if (y < 0)
         {
-                return -1; // Error: Invalid input
-        }
+                return -1; 
+	}
         else if (y == 0)
         {
-                return 1; // Base case: any number raised to 0 is 1
-        }
-        else
+                return 1; 
+	}
+	else
         {
-                return x * _pow_recursion(x, y - 1); // Recursive case
-        }
+                return x * _pow_recursion(x, y - 1);
+	}
 }
