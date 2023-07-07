@@ -29,15 +29,15 @@ int is_prime_helper(int n, int i)
 {
     if (n == i)
     {
-        return 1; // Base case: n is only divisible by itself, hence prime
+        return 1;
     }
     else if (n % i == 0)
     {
-        return 0; // Base case: n is divisible by a number other than 1 and itself, hence not prime
+        return 0;
     }
     else
     {
-        return is_prime_helper(n, i + 1); // Recursively check the next divisor
+        return is_prime_helper(n, i + 1);
     }
 }
 

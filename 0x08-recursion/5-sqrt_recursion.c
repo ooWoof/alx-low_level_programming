@@ -39,20 +39,20 @@ int sqrt_helper(int n, int start, int end)
         mid = (start + end) / 2;
         if (mid * mid == n)
         {
-            return mid; // Found the square root
-        }
+            return mid;
+	}
         else if (mid * mid > n)
         {
-            return sqrt_helper(n, start, mid - 1); // Look in the lower half
-        }
+            return sqrt_helper(n, start, mid - 1);
+	}
         else
         {
-            return sqrt_helper(n, mid + 1, end); // Look in the upper half
-        }
+            return sqrt_helper(n, mid + 1, end);
+	}
     }
     else
     {
-        return -1; // No exact square root found
+        return -1;
     }
 }
 
