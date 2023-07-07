@@ -10,7 +10,7 @@ int is_prime_number(int n)
 {
     if (n <= 1)
     {
-        return 0; // Numbers less than or equal to 1 are not prime
+        return 0;
     }
     else
     {
